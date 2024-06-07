@@ -7,6 +7,10 @@ body{
     align-items: center;
     margin-top: 10%;
     background-image:url(img/narshall.jpg);
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
 }
 
 h1{
