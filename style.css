@@ -1,0 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/musical-tone');
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-image:url(img/narshall.jpg);
+}
+
+h1{
+  display: block;
+  font-family: 'Musical Tone', sans-serif;
+  text-align: center;
+  font-size: 5em;
+  color: chocolate;
+  
+}
+
+
+
+.button {
+
+
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    filter:drop-shadow(-1px 6px 5px green);
+
+}
+
+.onplay{
+  filter: drop-shadow( -1px 6px 5px red);
+  animation-name: wobble_strings;
+  animation-duration: 0.1s;
+  animation-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  animation-iteration-count:infinite;
+}
+
+@keyframes wobble_strings {
+  0%{transform: translateX(-1px);}
+  25%{transform: translateX(0px);}
+  50%{transform: translateX(-1px);}
+  75% {transform: translateX(0px);}
+  100%{transform: translateX(1px);}
+  
+}
+
+
+@media (max-width:1176px){
+  .buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+  .button{
+    
+    width: 80%;
+    
+    
+  }
+  
+  .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+  
+
+
+
+
+
+
+}
